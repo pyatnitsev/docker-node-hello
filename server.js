@@ -16,6 +16,7 @@ function between(min, max) {
 const app = express();
 app.get('/', (req, res) => {
     res.send('Hello World! - ' + between(1,50));
+    console.log('works!');
 });
 
 app.listen(port, host);
